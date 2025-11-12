@@ -2,7 +2,7 @@ const Map<String, dynamic> portfolioData = {
   "name": "Akshay Patgar",
   "tagline": "Building the future with Flutter.",
   "careerObjective":
-      "To leverage my Flutter expertise and 3 years of experience in building scalable, cross-platform mobile apps to contribute to impactful, high-quality software solutions.", // Added
+      "To leverage my Flutter expertise and 3 years of experience in building scalable, cross-platform mobile apps to contribute to impactful, high-quality software solutions.",
   "professionalSummary":
       "Results-driven Software Engineer with over 3 years of experience, focused on building cross-platform mobile applications using Flutter and Dart, with a strong command of Bloc, Provider and GetX architectures with best practices like exponential backoff, debouncing and throttling.", // Confirmed
   "contact": {
@@ -18,24 +18,12 @@ const Map<String, dynamic> portfolioData = {
     "languages": ["Flutter", "Dart", "Java"],
     "versionControl": ["Git", "GitHub"],
     "ide": ["Visual Studio Code", "IntelliJ IDEA"],
-    "operatingSystems": [
-      "Windows",
-      "macOS",
-      "Linux",
-      "Android",
-      "iOS",
-    ], // Added from resume
+    "operatingSystems": ["Windows", "macOS", "Linux", "Android", "iOS"],
     "databases": ["Hive Database", "MySQL"],
-    "api": [
-      "Rest",
-      "GraphQL",
-      "MQTT",
-      "WebSocket",
-      "Subscription",
-    ], // Expanded from resume
+    "api": ["Rest", "GraphQL", "MQTT", "WebSocket", "Subscription"],
     "stateManagement": ["GetX", "Provider", "BLOC", "MVC", "MVVM"],
-    "tools": ["Android Studio", "Xcode"], // Split IDE/tools for clarity
-    "communication": ["MQTT", "WebSocket", "Subscription"], // Added from resume
+    "tools": ["Android Studio", "Xcode"],
+    "communication": ["MQTT", "WebSocket", "Subscription"],
   },
   "workExperience": [
     {
@@ -46,7 +34,7 @@ const Map<String, dynamic> portfolioData = {
         "Built and maintained cross-platform mobile apps using Flutter, improving performance by 20% through improved UI and state management with Bloc.",
         "Incorporated Firebase and AWS Amplify for secure authentication and user management across platforms.",
         "Worked with RESTful and GraphQL APIs to enable efficient, real-time data handling in mobile apps.",
-        "Implemented local storage and push notifications.", // Added from resume
+        "Implemented local storage and push notifications.",
         "Collaborated with senior developers and designers to integrate UI/UX designs and third-party libraries.",
       ],
     },
@@ -128,13 +116,13 @@ const Map<String, dynamic> portfolioData = {
       "school": "M S Ramaiah Institute of Technology",
       "degree": "Bachelors of Engineering",
       "duration": "2014-2018",
-      "cgpa": "8.55", // Added from resume
+      "cgpa": "8.55",
     },
     {
       "school": "Dr A V Baliga College of Arts and Science",
       "degree": "Pre University",
       "duration": "2012-2014",
-      "percentage": "92", // Added from resume
+      "percentage": "92",
     },
     {
       "school": "Konkan Education Trust Kumta",
