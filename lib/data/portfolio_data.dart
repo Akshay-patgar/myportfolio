@@ -4,7 +4,7 @@ const Map<String, dynamic> portfolioData = {
   "careerObjective":
       "To leverage my Flutter expertise and 3 years of experience in building scalable, cross-platform mobile apps to contribute to impactful, high-quality software solutions.", // Added
   "professionalSummary":
-      "Results-driven Software Engineer with over 3 years of experience, focused on building cross-platform mobile applications using Flutter and Dart, with a strong command of Bloc, Provider and GetX architectures with best practices like exponential backoff, debouncing and throttling/", // Confirmed
+      "Results-driven Software Engineer with over 3 years of experience, focused on building cross-platform mobile applications using Flutter and Dart, with a strong command of Bloc, Provider and GetX architectures with best practices like exponential backoff, debouncing and throttling.", // Confirmed
   "contact": {
     "email": "a.k.patgar831@gmail.com",
     "phone": "+919620079788",
@@ -15,9 +15,9 @@ const Map<String, dynamic> portfolioData = {
     "dob": "24/02/1996",
   },
   "skills": {
-    "languages": ["Flutter", "Dart", "Java"], // Updated: Added Java, formatted
-    "versionControl": ["Git", "GitHub"], // Added from resume
-    "ide": ["Visual Studio Code", "IntelliJ IDEA"], // From resume
+    "languages": ["Flutter", "Dart", "Java"],
+    "versionControl": ["Git", "GitHub"],
+    "ide": ["Visual Studio Code", "IntelliJ IDEA"],
     "operatingSystems": [
       "Windows",
       "macOS",
