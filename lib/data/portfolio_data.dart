@@ -4,12 +4,12 @@ const Map<String, dynamic> portfolioData = {
   "careerObjective":
       "To leverage my Flutter expertise and 3 years of experience in building scalable, cross-platform mobile apps to contribute to impactful, high-quality software solutions.", // Added
   "professionalSummary":
-      "Results-driven Software Engineer with over 3 years of experience, focused on building cross-platform mobile applications using Flutter and Dart, with a strong command of Bloc, Provider and GetX architectures. Building scalable, maintained, clean code base.", // Confirmed
+      "Results-driven Software Engineer with over 3 years of experience, focused on building cross-platform mobile applications using Flutter and Dart, with a strong command of Bloc, Provider and GetX architectures with best practices like exponential backoff, debouncing and throttling/", // Confirmed
   "contact": {
     "email": "a.k.patgar831@gmail.com",
     "phone": "+919620079788",
     "resume":
-        "https://drive.google.com/file/d/1Ubq83j7Ftei_zDcm_6-bSpnV66caCq95/view?usp=drivesdk",
+        "https://drive.google.com/file/d/13BvokJg8Ms2x1PWsiXA6hAWHHWsJdaAK/view?usp=drivesdk",
     "linkedin": "https://www.linkedin.com/in/akshay-patgar-321210253",
     "location": "Bangalore, Karnataka-560054",
     "dob": "24/02/1996",
