@@ -32,7 +32,6 @@ dependencies:
     sdk: flutter
   cupertino_icons: ^1.0.8
   animate_do: ^3.0.2
-  get: ^4.6.5
   url_launcher: ^6.1.11
   google_fonts: ^4.0.4
   flutter_launcher_icons:

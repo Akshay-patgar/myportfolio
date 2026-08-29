@@ -1,29 +1,49 @@
-// This is a basic Flutter widget test.
-//
-// To perform an interaction with a widget in your test, use the WidgetTester
-// utility in the flutter_test package. For example, you can send tap and scroll
-// gestures. You can also use WidgetTester to find child widgets in the widget
-// tree, read text, and verify that the values of widget properties are correct.
-
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 import 'package:myportfolio/app.dart';
 
+void _setView(WidgetTester tester, Size size) {
+  tester.view.physicalSize = size;
+  tester.view.devicePixelRatio = 1.0;
+  addTearDown(tester.view.reset);
+}
+
+Future<void> _pumpApp(WidgetTester tester) async {
+  await tester.pumpWidget(const PortfolioApp());
+  await tester.pump(const Duration(seconds: 1));
+}
+
 void main() {
-  testWidgets('Counter increments smoke test', (WidgetTester tester) async {
-    // Build our app and trigger a frame.
-    await tester.pumpWidget(const PortfolioApp());
+  testWidgets('portfolio renders hero with name and nav sections',
+      (WidgetTester tester) async {
+    _setView(tester, const Size(1400, 900));
+    await _pumpApp(tester);
 
-    // Verify that our counter starts at 0.
-    expect(find.text('0'), findsOneWidget);
-    expect(find.text('1'), findsNothing);
+    expect(find.textContaining('Akshay Patgar'), findsWidgets);
+    expect(find.text('1. home'), findsOneWidget);
+    expect(find.text('4. projects'), findsOneWidget);
+  });
 
-    // Tap the '+' icon and trigger a frame.
-    await tester.tap(find.byIcon(Icons.add));
-    await tester.pump();
+  testWidgets('single-page layout contains experience content after scrolling',
+      (WidgetTester tester) async {
+    _setView(tester, const Size(1400, 900));
+    await _pumpApp(tester);
 
-    // Verify that our counter has incremented.
-    expect(find.text('0'), findsNothing);
-    expect(find.text('1'), findsOneWidget);
+    // Scroll the page content down to reveal the experience section.
+    await tester.drag(find.byType(SingleChildScrollView), const Offset(0, -2600));
+    await tester.pump(const Duration(seconds: 1));
+    await tester.pump(const Duration(milliseconds: 200));
+
+    expect(find.text('@ GeekyAnts India Pvt Ltd'), findsOneWidget);
+    expect(
+        find.text('@ Mobil80 Solutions and Services Pvt Ltd'), findsOneWidget);
+  });
+
+  testWidgets('compact layout shows popup menu instead of inline nav',
+      (WidgetTester tester) async {
+    _setView(tester, const Size(500, 800));
+    await _pumpApp(tester);
+
+    expect(find.text('1. home'), findsNothing);
   });
 }
